@@ -1,0 +1,115 @@
+import java.util.Scanner;
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class Exp1_S3_Rene_Alfaro {
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String tipoEntrada = "";
+        boolean entradaValida = false;
+        NumberFormat formato = NumberFormat.getCurrencyInstance(new Locale("es","CL"));
+        formato.setMinimumFractionDigits(0); // Eliminar decimales 
+        formato.setMaximumFractionDigits(0);
+        // Bucle para validar el tipo de entrada mientras sea "false" seguira en el ciclo
+        while (entradaValida == false) {
+            System.out.println("Por favor, ingrese el tipo de entrada (1-4):");
+            System.out.println("1. VIP");
+            System.out.println("2. Platea baja");
+            System.out.println("3. Platea alta");
+            System.out.println("4. Palcos");
+            tipoEntrada = scanner.nextLine().trim().toLowerCase();
+
+            if (tipoEntrada.equals("1") || tipoEntrada.equals("2") || tipoEntrada.equals("3") || tipoEntrada.equals("4") ) {
+                entradaValida = true;
+				
+	    } else {
+		entradaValida = false; 
+                System.out.println("ERROR: tipo de entrada no valida"); 
+			
+	    }
+        }
+
+        String tipoCliente = "";
+        boolean clienteValido = false;
+
+        // Bucle para validar el tipo de cliente
+        while (clienteValido == false) {
+            System.out.println("Por favor, indique tipo de tarifa (1-2):");
+            System.out.println("1. Estudiante");
+            System.out.println("2. Publico General");
+            tipoCliente = scanner.nextLine().trim().toLowerCase();
+
+            if (tipoCliente.equals("1") || tipoCliente.equals("2")) {
+                clienteValido = true; // Cliente válido
+            } else {
+                System.out.println("tipo de cliente no valido");
+            }
+        }
+    
+        // Precios según tipo de entrada y cliente
+        int precioEntrada = 0;
+        String nombreEntrada = "";
+        String nombreTarifa = "";
+        if (tipoEntrada.equals("1") && tipoCliente.equals("1") ){
+        
+            nombreEntrada = "Vip";
+            nombreTarifa = "Estudiante";
+            precioEntrada = 20000;
+        }
+        if (tipoEntrada.equals("1") && tipoCliente.equals("2") ){
+        
+            nombreEntrada = "Vip";
+            nombreTarifa = "Publico General";
+            precioEntrada = 30000;
+        }
+        if (tipoEntrada.equals("2") && tipoCliente.equals("1") ){
+        
+            nombreEntrada = "Platea Baja";
+            nombreTarifa = "Estudiante";
+            precioEntrada = 10000;
+        }
+        if (tipoEntrada.equals("2") && tipoCliente.equals("2") ){
+        
+            nombreEntrada = "Platea Baja";
+            nombreTarifa = "Publico General";
+            precioEntrada = 15000;
+        }
+        if (tipoEntrada.equals("3") && tipoCliente.equals("1") ){
+        
+            nombreEntrada = "Platea Alta";
+            nombreTarifa = "Estudiante";
+            precioEntrada = 9000;
+        }
+        if (tipoEntrada.equals("3") && tipoCliente.equals("2") ){
+        
+            nombreEntrada = "Platea Alta";
+            nombreTarifa = "Publico General";
+            precioEntrada = 18000;
+        }
+        if (tipoEntrada.equals("4") && tipoCliente.equals("1") ){
+        
+            nombreEntrada = "Palcos";
+            nombreTarifa = "Estudiante";
+            precioEntrada = 6500;
+        }
+        if (tipoEntrada.equals("4") && tipoCliente.equals("2") ){
+        
+            nombreEntrada = "Palcos";
+            nombreTarifa = "Publico General";
+            precioEntrada = 13000;
+        }
+        
+        // Agregar impuesto del 19% de IVA
+        double iva = 0.19; // Definir el porcentaje de IVA
+        double precioConIva = precioEntrada + (precioEntrada * iva); // Calcular el precio con IVA
+        String precioFormateado = formato.format(precioConIva);
+        
+        // Mostrar resultado
+        System.out.println("\nTipo de entrada seleccionada: " + nombreEntrada);
+        System.out.println("Tipo de cliente: " + nombreTarifa);
+        System.out.println("Total a pagar (incluye IVA): " + precioFormateado);
+        System.out.println("Gracias por su compra, disfrute la funcion!");
+
+        scanner.close(); // Fin del Algoritmo
+    }
+}
