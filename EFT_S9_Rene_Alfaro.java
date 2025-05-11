@@ -10,7 +10,7 @@ public class EFT_S9_Rene_Alfaro {
         List<String> asientosVendidos = new ArrayList<>();
         ArrayList<String> asientosReservadosTemporalmente = new ArrayList<>();
         List<String> tiposAsientos = List.of("vip", "palco", "platea baja", "platea alta", "galeria");
-        double[] precios = {50000.0, 40000.0, 30000.0, 20000.0, 10000.0};
+        int [] precios = {50000, 40000, 30000, 20000, 10000};
         List<String> tiposClientes = List.of("infantil", "estudiante", "tercera edad");
         double[] descuentos = {0.10, 0.15, 0.25};
         String continuarCompra;
@@ -51,12 +51,23 @@ public class EFT_S9_Rene_Alfaro {
                 }
 
                 double descuentoCalculado = 0.0;
+                String tipoCliente = "ninguno"; // Valor por defecto
 
                 if (genero.equalsIgnoreCase("mujer")) {
-                    descuentoCalculado = 0.20;
+                    System.out.print("Ingrese su tipo de cliente (infantil, estudiante, tercera edad, o 'ninguno'): "); // Nuevo: Preguntar tipo de cliente para mujer
+                    tipoCliente = scanner.nextLine().toLowerCase();
+
+                    if (tiposClientes.contains(tipoCliente)) {
+                        int indiceTipoCliente = tiposClientes.indexOf(tipoCliente);
+                        descuentoCalculado = descuentos[indiceTipoCliente];
+                    } else if (!tipoCliente.equalsIgnoreCase("ninguno") && !tipoCliente.isEmpty()) {
+                        System.out.println("Error: Tipo de cliente invalido. No se aplicará descuento.");
+                    } else {
+                      descuentoCalculado = 0.20;
+                    }
                 } else {
                     System.out.print("Ingrese su tipo de cliente (infantil, estudiante, tercera edad, o 'ninguno'): "); //Breakpoint: clasificar el tipo de cliente con sus descuentos respectivos incluyendo el cliente que no cumple con los requisitos no reciba el descuento.
-                    String tipoCliente = scanner.nextLine().toLowerCase();
+                    tipoCliente = scanner.nextLine().toLowerCase();
 
                     if (tiposClientes.contains(tipoCliente) && tipoCliente.equals("infantil")) { // Breakpoint: verificar que se cumpla el descuento infantil
                         descuentoCalculado = descuentos[tiposClientes.indexOf(tipoCliente)];
@@ -153,6 +164,7 @@ public class EFT_S9_Rene_Alfaro {
                     System.out.println("Nombre: " + nombre);
                     System.out.println("Edad: " + edad);
                     System.out.println("Genero: " + genero);
+                    System.out.println("Tipo de Cliente: " + tipoCliente); // Breakpoint: Agregar el tipo de cliente en la boleta
                     System.out.println("Asientos comprados: " + asientosSeleccionados);
                     System.out.printf("Descuento aplicado: %.2f%%\n", (descuentoCalculado * 100));
                     System.out.printf("Total a pagar: $%.2f\n", precioTotal);
