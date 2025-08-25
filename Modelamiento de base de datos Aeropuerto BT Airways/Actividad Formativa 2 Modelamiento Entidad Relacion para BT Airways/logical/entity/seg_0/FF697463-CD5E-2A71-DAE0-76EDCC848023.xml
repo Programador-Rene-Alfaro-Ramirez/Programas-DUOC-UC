@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF697463-CD5E-2A71-DAE0-76EDCC848023" name="PASAJERO">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:33:57 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num_pasaporte" id="13EA4897-47AB-FE89-2776-B71D6AA31DDA">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:17 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_completo" id="E0658CFF-8FEB-F40A-803B-9BD8AE226B39">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_nacimiento" id="C535F2B6-759B-BD31-F9BB-3333FCA0450A">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nacionalidad" id="F652CB20-2A36-C91F-642F-C1684A12BC0C">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:19 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono_contacto" id="72CCB6FC-53BC-B579-CF17-8556C3F6FF1B">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:19 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="40728A6F-D5B7-1D27-580F-0043E5D651F6">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:34:20 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CFC3CEDE-7B3C-E312-1F15-449431739D5B" name="Pasajero PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 03:36:37 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>13EA4897-47AB-FE89-2776-B71D6AA31DDA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="485D8F8B-BDD6-CF33-8D85-8D52ECF06C1A" mainViewID="33B37CE3-8095-BF81-671F-C9B9F65CF761">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 02:52:55 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

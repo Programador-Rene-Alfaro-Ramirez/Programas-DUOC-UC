@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" mainViewID="01470D8C-4656-C851-5440-527BC1F1391D">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 02:52:57 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

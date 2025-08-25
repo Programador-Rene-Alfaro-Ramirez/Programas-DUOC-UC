@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B41D16CF-A8C9-4F96-46A9-7CE02ABE21B9" name="ADMINISTRATIVO">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:32:26 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="horas_extra" id="5F018490-86E3-C194-CBA5-7171638AD065">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:32:37 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AFP" id="FE3A09BE-6A7A-14B5-5FE2-D28429BA54A1">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:32:38 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_empleado" id="90DDAB37-2EFA-E540-2845-19004198B7A7">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 21:06:14 UTC</createdTime>
+<generatorID>767587BC-1B5C-0851-CC4F-BAF52B7C848E</generatorID>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<referedAttribute>08E6826A-5FDD-229A-E94E-DE94643BF45D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="32ED52CE-BB4F-C5B5-0810-27B6134406A2" name="ADMINISTRATIVO PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:32:56 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

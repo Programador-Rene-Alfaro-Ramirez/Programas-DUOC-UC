@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE29FE10-9FCE-B8CB-FC13-F3ED95E18927" name="VUELO">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:07:28 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num_vuelo" id="572B6649-5E4D-1C95-F417-38A6FE66F3DD">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:07:50 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_despegue" id="BB59E59D-C4BD-97EF-C3F8-91DC34962B72">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:07:50 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_llegada" id="9E6DE991-100F-6032-499C-7FECE529205C">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:07:51 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_salida" id="56A9C0F3-C93C-AC9E-95EA-BA52FB28F08E">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:07:51 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_reserva" id="752E5512-DCD5-1390-D728-3BBD35EEEE36">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 20:47:43 UTC</createdTime>
+<generatorID>AE8BD2A9-9966-78B7-B040-827B726522CA</generatorID>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<referedAttribute>20818038-15A6-97C1-3569-5E62803C857E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="76BFD722-6133-1591-9A6A-43BE828374EA" name="VUELO PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-24 04:08:21 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 2 Modelamiento Entidad Relacion para BT Airways</ownerDesignName>
+<engineerTo>
+<item key="AAEE166C-4B0A-AEC5-3227-4A2B9901D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>572B6649-5E4D-1C95-F417-38A6FE66F3DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
