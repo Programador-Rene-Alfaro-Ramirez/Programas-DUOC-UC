@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3BED8F5C-ED59-B33F-BFC7-A980089B5B60" name="Medico">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:40:29 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>2608293A-4F01-A311-BF75-F7FC03C845AF</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>Tipo_Personal</discriminatorColumnName>
+<discriminatorValue>&apos;Medico&apos;</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Rut_Personal" id="8CA7A9F8-E936-335D-075C-2927D07252C7">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:40:37 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Especialidad_Médica" id="63EF1BFE-7416-453B-1DBB-E0494C68D60D">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:40:37 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FK_Médico_Supervisor" id="4C93DD19-A1D9-B1E0-F7CE-03DC60A9AD2F">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:40:38 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUT_Personal1" id="E0087EEB-7E31-2147-6B3C-566217E5C77E">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:48:14 UTC</createdTime>
+<generatorID>F4DDE22A-C32D-5508-F43F-EAF19CEF68FF</generatorID>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<referedAttribute>0730B53D-4EB6-5EB9-43D0-A533FA88F4F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C5398BB7-1DAB-7EAD-7D94-BBB98620A058" name="Medico PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:40:59 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8CA7A9F8-E936-335D-075C-2927D07252C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

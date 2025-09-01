@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A61E315-CDDD-7DAD-E5B0-0084C6D270E9" name="Autovalente">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 03:41:05 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>360449B9-D397-F138-872E-E3F21475B7F5</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>Tipo_Residente</discriminatorColumnName>
+<discriminatorValue>&apos;Autovalente&apos;</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nivel_Independencia " id="38DD0962-672D-FA74-585C-F4115D7A059F">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 03:43:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Actividades_Autonomas" id="F1032E87-7DE4-9025-6A2F-0AA6AC3FA4F4">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 03:44:33 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUT_Residente" id="FF888627-7DC6-4E8F-1A05-374EC8A0C77E">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 03:49:40 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B0C7EEEB-7FEE-6EC5-8BA8-143627870BAA" name="Autovalente PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 03:49:48 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF888627-7DC6-4E8F-1A05-374EC8A0C77E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

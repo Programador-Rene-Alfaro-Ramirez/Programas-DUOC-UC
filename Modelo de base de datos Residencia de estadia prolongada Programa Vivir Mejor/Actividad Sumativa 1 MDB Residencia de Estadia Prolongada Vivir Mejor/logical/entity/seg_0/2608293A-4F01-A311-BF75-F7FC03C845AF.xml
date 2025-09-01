@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2608293A-4F01-A311-BF75-F7FC03C845AF" name="PERSONAL">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:01 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>A059A3D8-9901-693A-98EC-CAB33AB6CBEC</discriminatorAttributeID>
+<discriminatorColumnName>Tipo_Personal</discriminatorColumnName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RUT_Personal" id="0730B53D-4EB6-5EB9-43D0-A533FA88F4F5">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="C80C3877-F66F-63E0-22FF-F19A8D44894E">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Ingreso" id="C819ED96-BE9F-FFEF-F2DA-E0BCECEAED51">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Personal" id="A059A3D8-9901-693A-98EC-CAB33AB6CBEC">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:14 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Especialidad_Médica" id="48CDD3E5-36C5-D7AD-17B3-897F687E55BD">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Nullable)]]></commentInRDBMS>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FK_Médico_Supervisor" id="A88D3237-16D5-8C81-5B4F-9C4F23512E75">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Nullable)]]></commentInRDBMS>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FK_Residencia" id="85756D71-3436-679D-51F7-BA88CBCF514D">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:31:14 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUT_Personal1" id="3F4C2C4E-FD73-FDB7-0F53-AD673B6AE24F">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 01:55:53 UTC</createdTime>
+<generatorID>F4DDE22A-C32D-5508-F43F-EAF19CEF68FF</generatorID>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<referedAttribute>0730B53D-4EB6-5EB9-43D0-A533FA88F4F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19B92CD1-08DA-A696-F4FC-4E524B609A39" name="PERSONAL PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 23:40:33 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0730B53D-4EB6-5EB9-43D0-A533FA88F4F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

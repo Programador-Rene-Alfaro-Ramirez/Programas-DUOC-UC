@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_9" directorySegmentName="seg_0" id="80E40041-C82D-C9DC-B8F6-7E2B681A919D">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 04:43:44 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Super Type</nameOnSource>
+<nameOnTarget>Sub Type</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceEntity>2608293A-4F01-A311-BF75-F7FC03C845AF</sourceEntity>
+<targetEntity>3BED8F5C-ED59-B33F-BFC7-A980089B5B60</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

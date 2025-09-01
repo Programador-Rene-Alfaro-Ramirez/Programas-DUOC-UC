@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Supervisión Médica" directorySegmentName="seg_0" id="F4DDE22A-C32D-5508-F43F-EAF19CEF68FF">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 01:55:53 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<targetPk>19B92CD1-08DA-A696-F4FC-4E524B609A39</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3BED8F5C-ED59-B33F-BFC7-A980089B5B60</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3BED8F5C-ED59-B33F-BFC7-A980089B5B60</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

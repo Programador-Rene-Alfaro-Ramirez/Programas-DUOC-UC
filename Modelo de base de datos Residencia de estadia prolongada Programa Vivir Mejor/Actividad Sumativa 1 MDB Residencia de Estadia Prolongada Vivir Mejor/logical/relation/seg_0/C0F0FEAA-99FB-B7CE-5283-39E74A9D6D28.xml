@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Responsabilidad Legal" directorySegmentName="seg_0" id="C0F0FEAA-99FB-B7CE-5283-39E74A9D6D28">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 02:05:36 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<sourcePk>3483E80A-EF0B-E3E3-4690-1248C321537F</sourcePk>
+<targetPk>095563CC-A694-8866-962E-D0D7A0A34285</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>775F00FB-8288-C890-8903-64EE27820CC8</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6590D9C1-9A3E-1AC3-9572-34F94010AE4D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

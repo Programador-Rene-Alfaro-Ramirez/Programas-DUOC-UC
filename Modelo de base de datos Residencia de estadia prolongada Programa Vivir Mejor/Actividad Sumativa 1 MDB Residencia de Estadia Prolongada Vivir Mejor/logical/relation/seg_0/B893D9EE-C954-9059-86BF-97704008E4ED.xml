@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vinculacion Contractual" directorySegmentName="seg_0" id="B893D9EE-C954-9059-86BF-97704008E4ED">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 02:10:04 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<sourcePk>095563CC-A694-8866-962E-D0D7A0A34285</sourcePk>
+<targetPk>593ACE54-538E-A1E3-6849-EBB52566CDB7</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6590D9C1-9A3E-1AC3-9572-34F94010AE4D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FAECDB8E-E3C5-3C49-14FB-CFE0A2982B50</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

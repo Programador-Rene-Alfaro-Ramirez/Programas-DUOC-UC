@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Plantel" directorySegmentName="seg_0" id="B83960F0-772A-628D-8DD9-4CD9AE9E4836">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-29 01:30:27 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<engineerTo>
+<item key="DD10CB45-4D55-4F7D-56A8-4A96BC51225E" value="true"/>
+</engineerTo>
+<sourcePk>B9A1D540-5B8A-B096-D3F3-E6C093739A0D</sourcePk>
+<targetPk>19B92CD1-08DA-A696-F4FC-4E524B609A39</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1DEFF7DC-38C2-4A2D-EAB4-8CEF32EC9029</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2608293A-4F01-A311-BF75-F7FC03C845AF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

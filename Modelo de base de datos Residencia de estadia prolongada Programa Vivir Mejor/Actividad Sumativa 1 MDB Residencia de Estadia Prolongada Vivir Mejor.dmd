@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor" id="2EC86504-86AE-0495-C188-6C54FC1FDF24" version="3.5">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 20:49:22 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2EC86504-86AE-0495-C188-6C54FC1FDF24</designId>
+</OSDM_Design>

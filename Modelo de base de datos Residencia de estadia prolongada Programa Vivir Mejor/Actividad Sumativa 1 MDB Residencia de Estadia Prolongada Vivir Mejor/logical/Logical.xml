@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="29106ACD-8F09-D36D-9D09-3714A577FF1B" mainViewID="8410BC65-1B9E-196D-BF20-872152AA2F55">
+<createdBy>rene_</createdBy>
+<createdTime>2025-08-28 20:49:22 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 1 MDB Residencia de Estadia Prolongada Vivir Mejor</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
