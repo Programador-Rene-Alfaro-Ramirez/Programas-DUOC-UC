@@ -1,0 +1,17 @@
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\command\AgregarProductoCommand.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\command\Command.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\command\EliminarProductoCommand.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\controller\DescuentoController.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\controller\PedidoController.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\controller\ProductoController.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\Component.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\Descuento10.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\DescuentoCategoria.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\DescuentoDecorator.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\DiscountManager.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\Pedido.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\PrecioBase.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\PrecioDecorator.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\Producto.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\model\Usuario.java
+C:\Users\rene_\Desktop\Programas Informaticos (Analisis Programador Computacional)\Proyectos Java\TiendaDeRopaMVC\src\main\java\mavenproject1\View\ConsolaView.java
