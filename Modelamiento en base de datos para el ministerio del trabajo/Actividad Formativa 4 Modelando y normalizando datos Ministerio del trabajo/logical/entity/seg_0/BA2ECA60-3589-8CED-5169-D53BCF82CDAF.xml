@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA2ECA60-3589-8CED-5169-D53BCF82CDAF" name="EMPRESA">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:05:52 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_empresa" id="6D03B2B4-1050-9A6F-C9F9-55DC12AACB10">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:17 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_empresa" id="3104870B-C899-F361-6486-2CDD1B577C62">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:17 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="355E2FAC-3DA9-3295-2782-11AB4F09482C">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ciudad" id="F3926BBB-11D3-F959-B144-78510888D0C7">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pais" id="1680BE8F-21AE-A5A4-4E8A-B13F910A320F">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="remuneracion" id="51EA8258-B7E3-2923-B1B3-A840F418F7B9">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[la remuneración máxima ofrecida por cada empresa en moneda local,  oscila entre $1.850.000 hasta $4.800.000 CLP (pesos chilenos).]]></commentInRDBMS>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_postulacion" id="E7DF8AC4-D981-1F17-5A34-56179C0179EF">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:04:17 UTC</createdTime>
+<generatorID>B77758A8-E5F7-E360-24FE-52B9A6814F00</generatorID>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<referedAttribute>25A4F4A5-877B-5946-7E6A-834F191CB20D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CF75715-1804-1C18-396E-51CBF56FD2EE" name="Empresa PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 02:06:39 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D03B2B4-1050-9A6F-C9F9-55DC12AACB10</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

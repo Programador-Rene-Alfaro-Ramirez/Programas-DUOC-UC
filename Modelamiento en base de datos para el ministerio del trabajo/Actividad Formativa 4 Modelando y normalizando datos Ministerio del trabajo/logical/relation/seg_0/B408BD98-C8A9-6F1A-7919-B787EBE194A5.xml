@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PoseeTitulo" directorySegmentName="seg_0" id="B408BD98-C8A9-6F1A-7919-B787EBE194A5">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:20:31 UTC</createdTime>
+<notes><![CDATA[Cada postulante puede registrar hasta dos títulos profesionales. Esta relación es obligatoria desde TÍTULO PROFESIONAL (todo título debe estar vinculado a un postulante), pero opcional desde POSTULANTE (no todos los postulantes tienen títulos). La clave foránea id_postulante en TÍTULO PROFESIONAL garantiza la integridad referencial. Esta relación no es transferible.]]></notes>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>782428CF-FD21-ECE9-71C6-6D1E1BB27809</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E901E13-E3BF-7C48-9603-6A23DD5B846A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8EA61B11-3878-422D-8D25-AE1B437CFAF4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

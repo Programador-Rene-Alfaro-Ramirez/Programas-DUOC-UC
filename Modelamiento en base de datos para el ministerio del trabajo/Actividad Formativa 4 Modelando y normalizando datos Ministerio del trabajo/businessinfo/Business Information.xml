@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="288E8146-DEBF-777C-1E98-3D5CA43BAD65">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 01:25:29 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="77C665CD-D5BC-BD40-9D12-03B295495C14" mainViewID="941572D0-37BE-7AF6-C616-AC56B59F65EC">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 01:25:29 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

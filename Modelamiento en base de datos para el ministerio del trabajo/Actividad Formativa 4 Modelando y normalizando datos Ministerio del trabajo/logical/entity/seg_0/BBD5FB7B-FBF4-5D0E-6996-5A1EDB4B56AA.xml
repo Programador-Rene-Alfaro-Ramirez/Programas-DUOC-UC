@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBD5FB7B-FBF4-5D0E-6996-5A1EDB4B56AA" name="IDIOMA">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:19:10 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_idioma" id="01D7CA3F-D21E-7E4B-B184-4B844244E84C">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:19:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_postulante" id="81CF908E-BD6A-D298-2D96-B1BFAB34FFF5">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:19:18 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idioma" id="49A9CD7D-7B0A-01A6-5F3A-0890C318B253">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:19:19 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_postulante1" id="C9FEEBE9-356E-114C-8FCE-957A21A700EC">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:23:36 UTC</createdTime>
+<generatorID>E5E386D1-A019-C9A7-FAAD-A1A81635228A</generatorID>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<referedAttribute>C7CB7575-B4CD-C68A-B831-FC8F99D30CA1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A765D558-29C5-DD8E-C071-4FFEF1EAB3A0" name="IDIOMA PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:19:37 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01D7CA3F-D21E-7E4B-B184-4B844244E84C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

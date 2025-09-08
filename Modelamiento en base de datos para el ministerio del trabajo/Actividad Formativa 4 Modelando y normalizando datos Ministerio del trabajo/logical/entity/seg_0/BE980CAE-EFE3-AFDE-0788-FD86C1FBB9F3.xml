@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE980CAE-EFE3-AFDE-0788-FD86C1FBB9F3" name="Visa">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:15:27 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_visa" id="8ECC98CB-B764-A7BB-2837-67659AE7119F">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:15:36 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 CHAR</dataTypeSize>
+<ownDataTypeParameters>13 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_postulacion" id="7BC4A95F-6CFC-D0DE-CABD-01C558D0FC18">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:15:36 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_visa" id="C0C91AB0-F5D6-F334-897B-F359418A45E9">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:15:36 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_idioma" id="ECD84816-CDF7-9B71-9BBF-C676BAC1233A">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:15:36 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_postulacion1" id="2609A992-8A4E-F344-A2DB-AFD3A74CCA6D">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:07:18 UTC</createdTime>
+<generatorID>DFE91540-468F-265D-0735-BA98DA5A9733</generatorID>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<referedAttribute>25A4F4A5-877B-5946-7E6A-834F191CB20D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D0F282AE-EBE0-97EC-AEB2-E0FDE373E95F" name="Visa PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:16:02 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8ECC98CB-B764-A7BB-2837-67659AE7119F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

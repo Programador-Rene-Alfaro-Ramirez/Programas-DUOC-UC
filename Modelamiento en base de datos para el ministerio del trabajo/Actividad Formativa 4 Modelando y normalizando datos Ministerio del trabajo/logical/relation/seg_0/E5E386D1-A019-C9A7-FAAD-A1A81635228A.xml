@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DeclaraIdioma" directorySegmentName="seg_0" id="E5E386D1-A019-C9A7-FAAD-A1A81635228A">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:23:36 UTC</createdTime>
+<notes><![CDATA[Cada postulante debe declarar al menos un idioma, y puede registrar varios según su perfil. Esta relación es obligatoria en ambos sentidos: todo idioma debe estar vinculado a un postulante, y todo postulante debe tener al menos un idioma declarado. La clave foránea id_postulante en IDIOMA garantiza la integridad referencial. Esta relación no es transferible.]]></notes>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>782428CF-FD21-ECE9-71C6-6D1E1BB27809</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E901E13-E3BF-7C48-9603-6A23DD5B846A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BBD5FB7B-FBF4-5D0E-6996-5A1EDB4B56AA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

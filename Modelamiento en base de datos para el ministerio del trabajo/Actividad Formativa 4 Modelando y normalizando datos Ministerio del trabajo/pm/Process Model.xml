@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="528F6CDD-37B9-CC28-75CB-937336497EC2">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 01:25:29 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

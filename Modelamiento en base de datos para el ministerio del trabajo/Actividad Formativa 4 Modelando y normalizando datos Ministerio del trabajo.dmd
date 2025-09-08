@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo" id="95CB2F16-7F86-D74D-3C6E-674A615D75D3" version="3.5">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 01:25:29 UTC</createdTime>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>95CB2F16-7F86-D74D-3C6E-674A615D75D3</designId>
+</OSDM_Design>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RecibePostulación" directorySegmentName="seg_0" id="B77758A8-E5F7-E360-24FE-52B9A6814F00">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:01:10 UTC</createdTime>
+<notes><![CDATA[Una empresa puede recibir muchas postulaciones, pero cada postulación está asociada a una sola empresa.
+]]></notes>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>5CF75715-1804-1C18-396E-51CBF56FD2EE</sourcePk>
+<targetPk>CB97560E-9E09-48CA-8592-1259B29515BD</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>BA2ECA60-3589-8CED-5169-D53BCF82CDAF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>76FBC255-4FFF-2EE7-97FF-4917B6F5CD13</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

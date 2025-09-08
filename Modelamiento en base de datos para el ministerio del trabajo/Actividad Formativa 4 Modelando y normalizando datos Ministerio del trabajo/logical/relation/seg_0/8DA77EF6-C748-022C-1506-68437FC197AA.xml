@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Postula " directorySegmentName="seg_0" id="8DA77EF6-C748-022C-1506-68437FC197AA">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 03:46:21 UTC</createdTime>
+<notes><![CDATA[Cada postulante puede postularse a una sola empresa, por lo tanto, solo puede tener una sola postulación activa.
+]]></notes>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>782428CF-FD21-ECE9-71C6-6D1E1BB27809</sourcePk>
+<targetPk>CB97560E-9E09-48CA-8592-1259B29515BD</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E901E13-E3BF-7C48-9603-6A23DD5B846A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>76FBC255-4FFF-2EE7-97FF-4917B6F5CD13</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

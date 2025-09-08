@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="AsociarVisa" directorySegmentName="seg_0" id="DFE91540-468F-265D-0735-BA98DA5A9733">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-07 04:07:18 UTC</createdTime>
+<notes><![CDATA[La entidad Visa se vincula solo a postulaciones hechas a empresas extranjeras. Desde el lado de POSTULACIÓN, esta relación es opcional (no todas requieren visa), pero desde Visa es obligatoria (toda visa debe estar asociada a una postulación). La clave foránea id_postulacion en Visa asegura que cada visa esté conectada correctamente. Esta relación no se puede transferir a otra postulación.
+Solo se activa si la empresa asociada tiene residencia en un país distinto de Chile.
+]]></notes>
+<ownerDesignName>Actividad Formativa 4 Modelando y normalizando datos Ministerio del trabajo</ownerDesignName>
+<engineerTo>
+<item key="BB0E57C6-0B73-35FA-CFB0-6BD81FC7CD1A" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>CB97560E-9E09-48CA-8592-1259B29515BD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>76FBC255-4FFF-2EE7-97FF-4917B6F5CD13</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>BE980CAE-EFE3-AFDE-0788-FD86C1FBB9F3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
