@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5533BF6C-692A-A05B-E1BD-08590F53C5DF" name="SOLICITUD_EXAMEN">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:07:02 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_solicitud" id="8A2F27C3-5D6F-1585-190F-B8E7CF57568B">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:07:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_atencion" id="3F7ACDBB-E340-2368-D333-B1DAFCF14337">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:07:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo_examen" id="F2CAAFAA-DF90-2183-EFF3-3BACF5A5E72A">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:07:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resultado" id="50F9C5C6-23EE-A29C-D3B4-6173057CBD09">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:07:13 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

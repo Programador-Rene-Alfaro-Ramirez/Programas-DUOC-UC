@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD56D393-45DA-DD19-51D6-4D44B3845E2B" name="PAGO">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 22:59:32 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pago" id="CD8B1EDC-7ADB-D848-0C35-2F3E287D8BFB">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 22:59:51 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_atencion" id="26E1BD8E-AEF6-5303-E562-B94B8CBC0FA3">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 22:59:51 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto" id="F2B5E285-04AF-8560-DCE1-BB03004EBED0">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 22:59:51 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_pago" id="1A1B4047-12E1-BD1F-B762-76C8C760505B">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 22:59:51 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_atencion1" id="8FA9D269-0221-4EBB-ADD0-2FAAC7C85B8A">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:39:38 UTC</createdTime>
+<generatorID>E377538C-9D9C-A245-0E63-B4C1A32B0D72</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<referedAttribute>8B2FD621-FF0A-9C71-DCE8-D6B51799E9FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5217D624-1B92-ACBA-EFA9-7AE1AAD40F48" name="PAGO PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 23:00:14 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD8B1EDC-7ADB-D848-0C35-2F3E287D8BFB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

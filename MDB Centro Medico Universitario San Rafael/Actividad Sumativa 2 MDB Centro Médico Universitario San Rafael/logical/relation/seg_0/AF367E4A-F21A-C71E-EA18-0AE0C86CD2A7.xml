@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="afiliado_a" directorySegmentName="seg_0" id="AF367E4A-F21A-C71E-EA18-0AE0C86CD2A7">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-13 02:56:29 UTC</createdTime>
+<comment><![CDATA[Cada paciente está afiliado a una AFP]]></comment>
+<notes><![CDATA[Cada paciente está afiliado obligatoriamente a una AFP. La relación es de tipo 1:N desde AFP hacia PACIENTE.]]></notes>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>4132C7FF-3F7F-2A75-0D64-8AF649AF1E73</sourcePk>
+<targetPk>5E5C87F8-4D36-7454-B1E6-4EEF2D9014D6</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>16FF8DC9-8DC9-D260-6597-75CDC2E9CF3A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E8E1D15D-2E83-10A5-B122-63425D37B8D8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

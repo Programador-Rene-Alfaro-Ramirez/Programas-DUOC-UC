@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EE906FE5-580E-F1C5-7C9E-9FD75BD04DF3" containerWithKeyObject="44DF23D6-7938-EC70-0A7F-BF9DB72C9DCA" localFKIndex="280915C4-A63C-440B-3ED0-BBF78C7ABA2F" name="SUPERVISIÓN_MÉDICO_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Un médico puede supervisar múltiples exámenes]]></comment>
+<generatorID>29C5E57C-06BE-6F0D-FCC8-4096A9F0F71C</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>MÉDICO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6ABE8ED0-D59F-3D11-02A2-654AB0EF10D3</referredTableID>
+<keyObject>CA8CAE19-58F3-14A5-CF1E-3F843F4B6C5C</keyObject>
+<referredKeyID>CA8CAE19-58F3-14A5-CF1E-3F843F4B6C5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_medico</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

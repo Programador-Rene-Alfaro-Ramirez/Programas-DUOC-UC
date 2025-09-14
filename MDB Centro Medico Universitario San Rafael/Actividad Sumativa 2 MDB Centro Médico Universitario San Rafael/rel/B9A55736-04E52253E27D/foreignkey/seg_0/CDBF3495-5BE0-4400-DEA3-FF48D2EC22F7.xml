@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CDBF3495-5BE0-4400-DEA3-FF48D2EC22F7" containerWithKeyObject="98A5097F-5713-6058-C1F3-72A22DE3CF4F" localFKIndex="6E812FB8-6F7F-4A1E-231F-5AE461778D39" name="ESP_MED_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada médico tiene una especialidad asignada]]></comment>
+<generatorID>81048E78-005C-D909-D230-5EFC5B859B92</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>MÉDICO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6ABE8ED0-D59F-3D11-02A2-654AB0EF10D3</referredTableID>
+<keyObject>CA8CAE19-58F3-14A5-CF1E-3F843F4B6C5C</keyObject>
+<referredKeyID>CA8CAE19-58F3-14A5-CF1E-3F843F4B6C5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_medico</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

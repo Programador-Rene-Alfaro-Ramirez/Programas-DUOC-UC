@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="genera_pago" directorySegmentName="seg_0" id="E377538C-9D9C-A245-0E63-B4C1A32B0D72">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:39:38 UTC</createdTime>
+<comment><![CDATA[Cada atención genera un único pago]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>AEF95E08-D9E5-368A-0109-F857EC1165B4</sourcePk>
+<targetPk>5217D624-1B92-ACBA-EFA9-7AE1AAD40F48</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DAE22E11-4F18-7B3E-BEC3-1DFD8775D6B2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FD56D393-45DA-DD19-51D6-4D44B3845E2B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

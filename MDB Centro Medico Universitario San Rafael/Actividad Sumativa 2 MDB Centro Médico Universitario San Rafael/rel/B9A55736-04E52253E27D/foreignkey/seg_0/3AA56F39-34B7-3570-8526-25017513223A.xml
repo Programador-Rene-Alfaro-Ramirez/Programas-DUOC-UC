@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3AA56F39-34B7-3570-8526-25017513223A" containerWithKeyObject="ADF5F069-BF1F-E2B6-B20C-AA5B1E5C24BB" localFKIndex="942C779C-A173-8CE8-FD0B-EB93194CE6B6" name="EXAMEN_SOLICITUD_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada solicitud de examen corresponde a un examen específico]]></comment>
+<generatorID>1CD3521A-CFF0-5BE1-BD47-DC525AE39E01</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>SOLICITUD_EXAMEN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C8E508DA-60CF-647C-C0AC-1A8BA391AD57</referredTableID>
+<keyObject>0D5B63FB-6364-0687-6F7A-C260E04786E2</keyObject>
+<referredKeyID>0D5B63FB-6364-0687-6F7A-C260E04786E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOLICITUD_EXAMEN_ID</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

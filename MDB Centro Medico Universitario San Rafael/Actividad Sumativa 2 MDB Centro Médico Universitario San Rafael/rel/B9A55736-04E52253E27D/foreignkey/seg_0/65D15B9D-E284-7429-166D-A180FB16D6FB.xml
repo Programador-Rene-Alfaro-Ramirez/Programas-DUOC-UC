@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="65D15B9D-E284-7429-166D-A180FB16D6FB" containerWithKeyObject="A61AED05-2F46-8284-0AA0-93D08150E0AD" localFKIndex="F9C40128-7A96-9AB5-589B-DC3D97EFD430" name="INSTITUCION_SALUD_PACIENTE_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada paciente está registrado en una institución de salud]]></comment>
+<generatorID>96426E16-DFD1-6545-065C-11BF012B914F</generatorID>
+<notes><![CDATA[Cada paciente está vinculado a una institución de salud. La relación es de tipo 1:N desde INSTITUCIÓN_SALUD hacia PACIENTE.]]></notes>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>PACIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>202A8365-22B3-37F0-13F7-DC23C4DA3641</referredTableID>
+<keyObject>0F70CF4A-64B3-EE76-3102-C114ACC4E41F</keyObject>
+<referredKeyID>0F70CF4A-64B3-EE76-3102-C114ACC4E41F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VARCHAR</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

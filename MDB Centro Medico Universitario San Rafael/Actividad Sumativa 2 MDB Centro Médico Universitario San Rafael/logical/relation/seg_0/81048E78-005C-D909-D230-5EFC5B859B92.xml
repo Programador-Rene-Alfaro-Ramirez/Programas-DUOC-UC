@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tiene_especialidad" directorySegmentName="seg_0" id="81048E78-005C-D909-D230-5EFC5B859B92">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:49:10 UTC</createdTime>
+<comment><![CDATA[Cada médico tiene una especialidad asignada]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>73C78EF6-AC02-C88C-15CF-25C88EBCEA02</sourcePk>
+<targetPk>9632C02C-07BD-29CF-969B-C0E25D756D93</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8CA96734-6E84-52A3-E7B3-E5C6EF7A5E92</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7B425653-B55B-9616-E274-08C238B014BB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

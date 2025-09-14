@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="76817D1A-CEBD-AD2B-17C9-A4FF6F6D3EDC" containerWithKeyObject="052CC906-C2DB-DD49-55F3-448EF9D4C978" localFKIndex="D00EF436-5894-137F-6460-A3630413B753" name="UNIDAD_UNIDAD_ESPECIALIDAD_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Una unidad puede ofrecer múltiples especialidades]]></comment>
+<generatorID>A8AF7EA0-4DA2-1EEE-D826-E36D3B79486F</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>UNIDAD_ESPECIALIDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F6720D7-BFDA-2497-AA79-268B29556280</referredTableID>
+<keyObject>1FBD0A97-416F-AA13-C26B-88BA90E627BB</keyObject>
+<referredKeyID>1FBD0A97-416F-AA13-C26B-88BA90E627BB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_unidad,id_especialidad</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

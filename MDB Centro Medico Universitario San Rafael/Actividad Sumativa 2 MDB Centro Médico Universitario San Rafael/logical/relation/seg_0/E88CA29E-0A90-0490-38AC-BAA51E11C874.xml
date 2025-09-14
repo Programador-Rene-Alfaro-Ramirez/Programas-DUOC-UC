@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pertenece_a_region" directorySegmentName="seg_0" id="E88CA29E-0A90-0490-38AC-BAA51E11C874">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-13 02:15:17 UTC</createdTime>
+<comment><![CDATA[Cada comuna pertenece obligatoriamente a una región]]></comment>
+<notes><![CDATA[Una región contiene varias comunas. Cada comuna pertenece a una sola región.]]></notes>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>7D7D1F79-D9CE-DFDD-D17A-847F632558EB</sourcePk>
+<targetPk>0C2E4D06-7F3C-DDB9-9E71-8B398CCF6BB9</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>7C5BB91A-7B62-7D8E-C02D-1F1F7A0E55B9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DA2B73BB-60B3-A75F-37E5-DB9A85A7E1CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

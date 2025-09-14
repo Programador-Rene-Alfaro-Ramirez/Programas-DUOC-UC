@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tiene_supervision" directorySegmentName="seg_0" id="29C5E57C-06BE-6F0D-FCC8-4096A9F0F71C">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:52:09 UTC</createdTime>
+<comment><![CDATA[Un médico puede supervisar múltiples exámenes]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>73C78EF6-AC02-C88C-15CF-25C88EBCEA02</sourcePk>
+<targetPk>74D9AFC8-4ED7-F3CE-D42C-1DE9BF5F06E2</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8CA96734-6E84-52A3-E7B3-E5C6EF7A5E92</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A00B2352-6F21-7BA9-4380-A877577D421D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

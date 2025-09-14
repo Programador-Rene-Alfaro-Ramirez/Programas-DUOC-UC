@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17EB965E-7883-E54A-6A23-12F43A7A0DED" containerWithKeyObject="6ABE8ED0-D59F-3D11-02A2-654AB0EF10D3" localFKIndex="036035E2-0B62-ECA5-24B6-32B6384CED79" name="MÉDICO_ATENCIÓN_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada atención médica es realizada por un médico]]></comment>
+<generatorID>932BE0CE-DC6D-65F3-8F51-84C9D7933FDA</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>ATENCIÓN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94FCCAA9-FBC8-EEE5-A5BB-348FF203455F</referredTableID>
+<keyObject>B3789AB4-044D-F977-9081-6E12EAB44C57</keyObject>
+<referredKeyID>B3789AB4-044D-F977-9081-6E12EAB44C57</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_atencion</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vive_en" directorySegmentName="seg_0" id="3EA7AA27-7C72-E60C-A06B-77C14774EEA0">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:28:45 UTC</createdTime>
+<comment><![CDATA[Cada paciente reside en una comuna.]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>0C2E4D06-7F3C-DDB9-9E71-8B398CCF6BB9</sourcePk>
+<targetPk>5E5C87F8-4D36-7454-B1E6-4EEF2D9014D6</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DA2B73BB-60B3-A75F-37E5-DB9A85A7E1CA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E8E1D15D-2E83-10A5-B122-63425D37B8D8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

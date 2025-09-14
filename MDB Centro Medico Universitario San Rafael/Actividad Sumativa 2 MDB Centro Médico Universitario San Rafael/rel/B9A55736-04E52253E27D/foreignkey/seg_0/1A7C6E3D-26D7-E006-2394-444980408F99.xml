@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1A7C6E3D-26D7-E006-2394-444980408F99" containerWithKeyObject="56B24AD2-96F4-593E-D04F-6BA82EA54176" localFKIndex="93CDDB1D-56D7-1792-79CE-1DD239E57CC5" name="REGIÓN_COMUNA_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada comuna pertenece obligatoriamente a una región]]></comment>
+<generatorID>E88CA29E-0A90-0490-38AC-BAA51E11C874</generatorID>
+<notes><![CDATA[Una región contiene varias comunas. Cada comuna pertenece a una sola región.]]></notes>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>COMUNA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>56C626F4-C2E5-CF0E-FE80-672FA784ED72</referredTableID>
+<keyObject>A91842AB-FCB6-310B-3305-9E3971F40105</keyObject>
+<referredKeyID>A91842AB-FCB6-310B-3305-9E3971F40105</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_comuna</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="7F42AA9A-BCEB-D5C1-ABDE-5163817520FB">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-13 02:39:52 UTC</createdTime>
+<comment><![CDATA[Una especialidad puede estar presente en varias unidades]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>9632C02C-07BD-29CF-969B-C0E25D756D93</sourcePk>
+<dominantRole>7B425653-B55B-9616-E274-08C238B014BB</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>7B425653-B55B-9616-E274-08C238B014BB</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FFF4424D-CE6A-CD0F-350A-B2CB341389B9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

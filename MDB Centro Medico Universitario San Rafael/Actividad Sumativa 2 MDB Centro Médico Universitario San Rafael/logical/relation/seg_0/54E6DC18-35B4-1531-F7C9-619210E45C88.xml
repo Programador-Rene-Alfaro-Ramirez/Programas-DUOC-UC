@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMUNA_UNIDAD" directorySegmentName="seg_0" id="54E6DC18-35B4-1531-F7C9-619210E45C88">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-13 02:29:26 UTC</createdTime>
+<comment><![CDATA[Cada unidad médica está ubicada en una comuna]]></comment>
+<notes><![CDATA[Cada unidad médica está ubicada en una comuna. La relación es de tipo 1:N desde COMUNA hacia UNIDAD.]]></notes>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>0C2E4D06-7F3C-DDB9-9E71-8B398CCF6BB9</sourcePk>
+<targetPk>DC804315-EC70-26DE-D6FB-1E2F775309F2</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DA2B73BB-60B3-A75F-37E5-DB9A85A7E1CA</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DFE57764-6162-1E9E-7708-27EE36029F14</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

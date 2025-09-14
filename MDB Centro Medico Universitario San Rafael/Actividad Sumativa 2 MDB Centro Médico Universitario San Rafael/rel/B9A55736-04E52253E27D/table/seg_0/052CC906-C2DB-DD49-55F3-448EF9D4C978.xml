@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="052CC906-C2DB-DD49-55F3-448EF9D4C978" name="UNIDAD">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>DFE57764-6162-1E9E-7708-27EE36029F14</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_unidad" id="C168A9D7-DD72-BBD2-A813-B5D0B11195A8">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>555B8C6C-0396-C192-FE06-5B0721DB9ED2</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76817D1A-CEBD-AD2B-17C9-A4FF6F6D3EDC" referredColumn="B4640D88-CD32-81CC-0C25-DEF79529AED3"/>
+</associations>
+</Column>
+<Column name="nombre_unidad" id="1A22CBF9-E1F3-85DF-C040-8DE203AADE98">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>AB752917-BCBA-4039-1841-5512A183089A</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUCION_SALUD_codigo_salud" id="CA53D051-7BC4-128E-29FA-3C44965C5822">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>633CD5D4-A50B-081D-FDA3-B619A2FB389D</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5D3001F-0026-FD9A-2DA2-FEACE6444053" referredColumn="AED3615E-756E-D7C3-1AB0-90497F4DCA5B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22B59A6C-0DE9-579A-7CD3-3EFCA72FFCF6" name="UNIDAD_PK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>DC804315-EC70-26DE-D6FB-1E2F775309F2</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C168A9D7-DD72-BBD2-A813-B5D0B11195A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFE1E28F-E8F1-FB16-EF57-5C214F9FD2B9" name="UNIDAD_INSTITUCION_SALUD_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>D5E5161C-5808-90AD-20F1-3AA9BF2F51CE</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA53D051-7BC4-128E-29FA-3C44965C5822"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D00EF436-5894-137F-6460-A3630413B753" name="UNIDAD_UNIDAD_ESPECIALIDAD_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<generatorID>A8AF7EA0-4DA2-1EEE-D826-E36D3B79486F</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C168A9D7-DD72-BBD2-A813-B5D0B11195A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

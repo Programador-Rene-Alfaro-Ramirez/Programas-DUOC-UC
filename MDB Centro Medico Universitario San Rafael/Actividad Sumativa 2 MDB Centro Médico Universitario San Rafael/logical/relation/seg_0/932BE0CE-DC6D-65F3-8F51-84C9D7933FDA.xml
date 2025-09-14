@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEDICO_ATENCION" directorySegmentName="seg_0" id="932BE0CE-DC6D-65F3-8F51-84C9D7933FDA">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 01:34:18 UTC</createdTime>
+<comment><![CDATA[Cada atención médica es realizada por un médico]]></comment>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<engineerTo>
+<item key="B9A55736-1C73-BA0F-3BD8-04E52253E27D" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>73C78EF6-AC02-C88C-15CF-25C88EBCEA02</sourcePk>
+<targetPk>AEF95E08-D9E5-368A-0109-F857EC1165B4</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8CA96734-6E84-52A3-E7B3-E5C6EF7A5E92</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DAE22E11-4F18-7B3E-BEC3-1DFD8775D6B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

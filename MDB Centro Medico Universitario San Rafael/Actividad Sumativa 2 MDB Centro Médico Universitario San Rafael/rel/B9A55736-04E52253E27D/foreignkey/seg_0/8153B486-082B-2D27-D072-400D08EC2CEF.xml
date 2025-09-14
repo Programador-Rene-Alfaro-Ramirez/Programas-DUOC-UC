@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8153B486-082B-2D27-D072-400D08EC2CEF" containerWithKeyObject="609A984E-F984-53C9-60FD-32D099E0C9ED" localFKIndex="223E2C32-B26B-35AE-A96D-218BA7B815C1" name="PAGO_ATENCIÓN_FK">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-14 03:14:47 UTC</createdTime>
+<comment><![CDATA[Cada atención genera un único pago]]></comment>
+<generatorID>E377538C-9D9C-A245-0E63-B4C1A32B0D72</generatorID>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<referredTableLongName>ATENCIÓN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94FCCAA9-FBC8-EEE5-A5BB-348FF203455F</referredTableID>
+<keyObject>B3789AB4-044D-F977-9081-6E12EAB44C57</keyObject>
+<referredKeyID>B3789AB4-044D-F977-9081-6E12EAB44C57</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_atencion</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

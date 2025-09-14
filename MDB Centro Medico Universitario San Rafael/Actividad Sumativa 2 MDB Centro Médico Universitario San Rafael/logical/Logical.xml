@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="419ADB27-092D-5585-0CE7-40F14DA662B5" mainViewID="588F7976-328B-10DF-177D-5B4B0F9C44B8">
+<createdBy>rene_</createdBy>
+<createdTime>2025-09-12 20:23:30 UTC</createdTime>
+<ownerDesignName>Actividad Sumativa 2 MDB Centro Médico Universitario San Rafael</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
