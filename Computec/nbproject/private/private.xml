@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/ui/MainFrame.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/conexionbd/DatabaseConnection.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/patterns/Descuento.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/patterns/DescuentoBase.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/patterns/DescuentoDesktop15.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/patterns/Command.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/model/Cliente.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/model/Equipo.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/model/Venta.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/dao/ClienteDAO.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/dao/EquipoDAO.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/dao/VentaDAO.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/ui/ClienteForm.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/ui/EquipoForm.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/ui/VentaForm.java</file>
+            <file>file:/C:/Users/rene_/Desktop/Programas%20Informaticos%20(Analisis%20Programador%20Computacional)/Proyectos%20Java/Computec/src/computec/ui/ReporteForm.java</file>
+        </group>
+    </open-files>
+</project-private>
