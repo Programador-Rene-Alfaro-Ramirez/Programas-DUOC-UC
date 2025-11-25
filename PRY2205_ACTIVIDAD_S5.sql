@@ -1,0 +1,72 @@
+-- ----------------------------------------------------------------------------- 
+-- SEMANA 5 - PRY2205_SEMANA5
+-- Base de datos: PRY2205_ACTIVIDAD_S5 (Oracle Cloud) 
+-- Estudiantes: René Alfaro y Dominique Hernandez
+-- Grupo 6
+-- -----------------------------------------------------------------------------
+
+--     Proyecto "Gestión de clientes y productos financieros - FinanCorp"
+
+-- -----------------------------------------------------------------------------   
+
+-- =============================================================================
+-- Informe CASO 1: "Listado de Clientes"
+
+ALTER SESSION SET nls_date_format = 'DD-MM-YYYY';
+
+SELECT
+    SUBSTR(TO_CHAR(c.numrun),1,LENGTH(c.numrun)-6) || '.' ||
+    SUBSTR(TO_CHAR(c.numrun),-6,3) || '.' ||
+    SUBSTR(TO_CHAR(c.numrun),-3,3) || '-' || c.dvrun AS "RUT Cliente",
+
+    INITCAP(c.pnombre || ' ' || NVL(c.snombre,'') || ' ' ||
+            c.appaterno || ' ' || NVL(c.apmaterno,'')) AS "Nombre Cliente",
+
+    UPPER(p.nombre_prof_ofic) AS "Profesión Cliente",
+
+    TO_CHAR(c.fecha_inscripcion, 'DD-MM-YYYY') AS "Fecha de Inscripción",
+
+    c.direccion AS "Dirección Cliente"
+
+FROM cliente c
+INNER JOIN profesion_oficio p
+       ON p.cod_prof_ofic = c.cod_prof_ofic
+
+WHERE UPPER(p.nombre_prof_ofic) IN ('CONTADOR','VENDEDOR')
+  AND EXTRACT(YEAR FROM c.fecha_inscripcion) >
+      (SELECT ROUND(AVG(EXTRACT(YEAR FROM fecha_inscripcion)))
+         FROM cliente)
+
+ORDER BY c.numrun ASC;
+
+SELECT ROUND (AVG(EXTRACT (YEAR FROM fecha_inscripcion))) FROM CLIENTE;
+--                                                                               /* Explicacion: El resultado muestra solo dos clientes, ya que 
+--                                                                                  el promedio redondeado de los años de inscripción es 2011, y solo los clientes 
+--                                                                                  inscritos en años posteriores (2013) cumplen la condición establecida en el caso. */
+--                                                                                   (2010 + 2010 + 2010 + 2010 + 2013 + 2013) / 6
+--                                                                                   = 12066 / 6
+--                                                                                   = 2011
+-- =============================================================================
+-- Informe CASO 2: "Aumento de Crédito"
+
+CREATE TABLE CLIENTES_CUPOS_COMPRA AS
+SELECT
+    TO_CHAR(c.numrun) || '-' || c.dvrun AS RUT_CLIENTE,
+    (EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM c.fecha_nacimiento)) AS EDAD,
+    TO_CHAR(tc.cupo_disp_compra, '$99G999G999') AS CUPO_DISPONIBLE_COMPRA,
+    UPPER(tpc.nombre_tipo_cliente) AS TIPO_CLIENTE
+FROM
+    cliente c
+    JOIN tarjeta_cliente tc ON c.numrun = tc.numrun
+    JOIN tipo_cliente tpc ON c.cod_tipo_cliente = tpc.cod_tipo_cliente
+WHERE
+    tc.cupo_disp_compra >= (
+        SELECT MAX(cupo_disp_compra)
+        FROM tarjeta_cliente
+        WHERE EXTRACT(YEAR FROM fecha_solic_tarjeta) = EXTRACT(YEAR FROM SYSDATE) - 1
+    )
+ORDER BY
+    edad ASC;
+
+-- Mostramos el resultado final
+SELECT * FROM CLIENTES_CUPOS_COMPRA;
