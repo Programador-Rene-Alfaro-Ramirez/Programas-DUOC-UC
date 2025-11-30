@@ -29,8 +29,8 @@ SELECT
     TO_CHAR(ROUND(SUM(a.honorario)), '$99G999G999') AS "TOTAL HONORARIOS"
 
 FROM profesional p
-INNER JOIN asesoria a ON p.id_profesional = a.id_profesional -- Agregamos INNER para claridad
-INNER JOIN empresa e ON a.cod_empresa = e.cod_empresa      -- Agregamos INNER para claridad
+INNER JOIN asesoria a ON p.id_profesional = a.id_profesional 
+INNER JOIN empresa e ON a.cod_empresa = e.cod_empresa      
 
 WHERE p.id_profesional IN (
     -- Subconsulta para filtrar Profesionales Versátiles (Banca + Retail)
@@ -59,7 +59,7 @@ ORDER BY p.id_profesional ASC;
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE REPORTE_MES';
 EXCEPTION
-    WHEN OTHERS THEN NULL; -- Si no existe, no hace nada y sigue
+    WHEN OTHERS THEN NULL; 
 END;
 /
 
@@ -90,7 +90,7 @@ INNER JOIN comuna c ON p.cod_comuna = c.cod_comuna
 INNER JOIN asesoria a ON p.id_profesional = a.id_profesional
 
 WHERE 
-    -- REQUISITO: Abril del año pasado (Dinámico)
+    -- REQUISITO: Abril del año pasado 
     EXTRACT(MONTH FROM a.fin_asesoria) = 4 
     AND EXTRACT(YEAR FROM a.fin_asesoria) = EXTRACT(YEAR FROM SYSDATE) - 1
 
@@ -168,3 +168,4 @@ GROUP BY p.id_profesional, p.numrun_prof, p.sueldo
 ORDER BY p.id_profesional;
 
 -- fin del script
+
