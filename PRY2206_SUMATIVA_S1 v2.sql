@@ -1,0 +1,137 @@
+-- ----------------------------------------------------------------------------- 
+-- SEMANA 2 - PRY2206_SUMATIVA_S1
+-- Base de datos: SUMATIVA_2206_P1 (Oracle Cloud) 
+-- Estudiante: René Alfaro 
+-- -----------------------------------------------------------------------------
+
+-- Proyecto "Empresa de servicios de arriendo de Camiones y Maquinaria Pesada – Truck Rental"
+
+-- =============================================================================
+-- BLOQUE ADMIN: Configuración y Creación de Usuarios
+-- =============================================================================
+
+CREATE USER SUMATIVA_2206_P1 IDENTIFIED BY "PRY2206.sumativa_1"
+DEFAULT TABLESPACE "DATA"
+TEMPORARY TABLESPACE "TEMP";
+ALTER USER SUMATIVA_2206_P1  QUOTA UNLIMITED ON DATA;
+GRANT CREATE SESSION TO SUMATIVA_2206_P1;
+GRANT "RESOURCE" TO SUMATIVA_2206_P1;
+ALTER USER SUMATIVA_2206_P1 DEFAULT ROLE "RESOURCE";
+
+/* ==========================================================================
+   DESARROLLO DEL CASO
+   ========================================================================== */
+
+-- CONFIGURACIÓN INICIAL
+VARIABLE b_fecha_proceso VARCHAR2(20);
+EXEC :b_fecha_proceso := TO_CHAR(SYSDATE, 'DD/MM/YYYY');
+
+DECLARE
+    -- VARIABLES 
+    v_rut_emp       EMPLEADO.NUMRUN_EMP%TYPE;
+    v_dv_emp        EMPLEADO.DVRUN_EMP%TYPE;      
+    v_pnombre       EMPLEADO.PNOMBRE_EMP%TYPE;
+    v_snombre       EMPLEADO.SNOMBRE_EMP%TYPE;
+    v_appaterno     EMPLEADO.APPATERNO_EMP%TYPE;
+    v_apmaterno     EMPLEADO.APMATERNO_EMP%TYPE;
+    v_sueldo        EMPLEADO.SUELDO_BASE%TYPE;
+    v_fecha_nac     EMPLEADO.FECHA_NAC%TYPE;
+    v_fecha_cont    EMPLEADO.FECHA_CONTRATO%TYPE;
+    v_nombre_estcivil ESTADO_CIVIL.NOMBRE_ESTADO_CIVIL%TYPE; 
+
+    -- Variables internas
+    v_usuario       VARCHAR2(100);
+    v_clave         VARCHAR2(100);
+    v_anios_serv    NUMBER(3);
+    v_letras_clave  VARCHAR2(10);
+    v_letra_ec      CHAR(1);
+    v_fecha_proc    DATE;
+    v_part_c        NUMBER;
+    v_nombre_completo VARCHAR2(200); 
+    v_contador      NUMBER := 0;
+
+    CURSOR cur_empleados IS
+        SELECT e.ID_EMP, e.NUMRUN_EMP, e.DVRUN_EMP, 
+               e.PNOMBRE_EMP, e.SNOMBRE_EMP, e.APPATERNO_EMP, e.APMATERNO_EMP,
+               e.SUELDO_BASE, e.FECHA_NAC, e.FECHA_CONTRATO, 
+               ec.NOMBRE_ESTADO_CIVIL
+        FROM EMPLEADO e
+        JOIN ESTADO_CIVIL ec ON e.ID_ESTADO_CIVIL = ec.ID_ESTADO_CIVIL 
+        ORDER BY e.ID_EMP ASC;
+
+BEGIN
+    -- REQUISITO 5: TRUNCADO CON SQL DINÁMICO
+    EXECUTE IMMEDIATE 'TRUNCATE TABLE USUARIO_CLAVE';
+
+    -- Capturar fecha
+    v_fecha_proc := TO_DATE(:b_fecha_proceso, 'DD/MM/YYYY');
+
+    FOR reg IN cur_empleados LOOP
+        -- Asignaciones
+        v_rut_emp    := reg.NUMRUN_EMP;
+        v_dv_emp     := reg.DVRUN_EMP;
+        v_pnombre    := reg.PNOMBRE_EMP;
+        v_snombre    := reg.SNOMBRE_EMP;
+        v_appaterno  := reg.APPATERNO_EMP;
+        v_apmaterno  := reg.APMATERNO_EMP;
+        v_sueldo     := reg.SUELDO_BASE;
+        v_fecha_nac  := reg.FECHA_NAC;
+        v_fecha_cont := reg.FECHA_CONTRATO;
+        v_nombre_estcivil := UPPER(reg.NOMBRE_ESTADO_CIVIL); 
+
+        v_nombre_completo := REPLACE(v_pnombre || ' ' || v_snombre || ' ' || v_appaterno || ' ' || v_apmaterno, '  ', ' ');
+
+        -- LÓGICA USUARIO
+        v_letra_ec := LOWER(SUBSTR(v_nombre_estcivil, 1, 1));
+        v_anios_serv := TRUNC(MONTHS_BETWEEN(v_fecha_proc, v_fecha_cont)/12);
+        
+        v_usuario := v_letra_ec || SUBSTR(v_pnombre, 1, 3) || LENGTH(v_pnombre) || '*' ||
+                     SUBSTR(TO_CHAR(v_sueldo), -1) || v_dv_emp || v_anios_serv;
+        
+        IF v_anios_serv < 10 THEN
+            v_usuario := v_usuario || 'X';
+        END IF;
+
+        -- LÓGICA CLAVE
+        IF v_nombre_estcivil LIKE 'CASADO%' OR v_nombre_estcivil LIKE 'ACUERDO%' THEN
+             v_letras_clave := SUBSTR(v_appaterno, 1, 2);
+        ELSIF v_nombre_estcivil LIKE 'SOLTERO%' OR v_nombre_estcivil LIKE 'DIVORCIADO%' THEN
+             v_letras_clave := SUBSTR(v_appaterno, 1, 1) || SUBSTR(v_appaterno, -1);
+        ELSIF v_nombre_estcivil LIKE 'VIUDO%' THEN
+             v_letras_clave := SUBSTR(v_appaterno, -3, 2);
+        ELSIF v_nombre_estcivil LIKE 'SEPARADO%' THEN
+             v_letras_clave := SUBSTR(v_appaterno, -2);
+        ELSE
+             v_letras_clave := SUBSTR(v_appaterno, 1, 2);
+        END IF;
+
+        v_part_c := ABS(TO_NUMBER(SUBSTR(TO_CHAR(v_sueldo), -3)) - 1);
+
+        v_clave := SUBSTR(TO_CHAR(v_rut_emp), 3, 1) ||
+                   (TO_NUMBER(TO_CHAR(v_fecha_nac, 'YYYY')) + 2) ||
+                   v_part_c ||   
+                   LOWER(v_letras_clave) ||
+                   reg.ID_EMP ||
+                   TO_CHAR(SYSDATE, 'MMYYYY');
+
+        INSERT INTO USUARIO_CLAVE 
+        (ID_EMP, NUMRUN_EMP, DVRUN_EMP, NOMBRE_EMPLEADO, NOMBRE_USUARIO, CLAVE_USUARIO)
+        VALUES 
+        (reg.ID_EMP, v_rut_emp, v_dv_emp, v_nombre_completo, v_usuario, v_clave);
+
+        v_contador := v_contador + 1;
+    END LOOP;
+
+    -- REQUISITO 7: CONFIRMACIÓN
+    COMMIT; 
+    DBMS_OUTPUT.PUT_LINE('¡EXITO! Se procesaron ' || v_contador || ' empleados.');
+
+EXCEPTION
+    -- REQUISITO 7: ROLLBACK EN CASO DE ERROR
+    WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Error en el proceso: ' || SQLERRM);
+END;
+/
+
+SELECT * FROM USUARIO_CLAVE ORDER BY ID_EMP;
