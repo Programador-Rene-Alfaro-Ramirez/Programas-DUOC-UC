@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gestión de Citas</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .formulario { background-color: #f9f9f9; padding: 20px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ccc; }
+        .input-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div style="text-align: right;">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesión" />
+        </form>
+    </div>
+
+    <h1>Agenda de Citas Médicas</h1>
+    <a href="/pacientes">Ir a Gestión de Pacientes</a> | <a href="/">Volver al Inicio</a>
+    <hr>
+
+    <div class="formulario">
+        <h3>Programar Nueva Cita</h3>
+        <form action="/citas/programar" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+            
+            <div class="input-group">
+                <label>Fecha:</label> <input type="date" name="fecha" required>
+                <label>Hora:</label> <input type="time" name="hora" required>
+            </div>
+            <div class="input-group">
+                <label>Motivo:</label> <input type="text" name="motivo" required>
+                <label>Veterinario Asignado:</label> <input type="text" name="veterinario" required>
+            </div>
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </div>
+
+    <h3>Citas Programadas</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Motivo</th>
+                <th>Veterinario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="cita : ${citas}">
+                <td th:text="${cita.fecha}"></td>
+                <td th:text="${cita.hora}"></td>
+                <td th:text="${cita.motivo}"></td>
+                <td th:text="${cita.veterinarioAsignado}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

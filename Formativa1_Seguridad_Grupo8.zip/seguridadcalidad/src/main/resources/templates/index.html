@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Veterinaria - Inicio</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .boton { padding: 10px 20px; font-size: 16px; cursor: pointer; margin: 10px; }
+        .menu { margin-top: 30px; padding: 20px; border: 1px solid #ccc; display: inline-block; border-radius: 10px; background-color: #f9f9f9;}
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Sistema de Gestión Veterinaria</h1>
+    <p>Plataforma exclusiva para el personal de la clínica.</p>
+    
+    <div class="menu">
+        <h3>Menú Principal</h3>
+        <a href="/pacientes"><button class="boton">Gestión de Pacientes</button></a>
+        <a href="/citas"><button class="boton">Agenda de Citas</button></a>
+    </div>
+    
+    <br><br>
+    <a href="/login">Acceso directo al Login</a>
+</body>
+</html>

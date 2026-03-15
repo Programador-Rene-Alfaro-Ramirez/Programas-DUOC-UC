@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gestión de Pacientes</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .formulario { background-color: #f9f9f9; padding: 20px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ccc; }
+        .input-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div style="text-align: right;">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesión" />
+        </form>
+    </div>
+
+    <h1>Registro Médico de Pacientes</h1>
+    <a href="/citas">Ir a Gestión de Citas</a> | <a href="/">Volver al Inicio</a>
+    <hr>
+
+    <div class="formulario">
+        <h3>Registrar Nuevo Paciente</h3>
+        <form action="/pacientes/registrar" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+            
+            <div class="input-group">
+                <label>Nombre:</label> <input type="text" name="nombre" required>
+                <label>Especie:</label> <input type="text" name="especie" required>
+                <label>Raza:</label> <input type="text" name="raza" required>
+            </div>
+            <div class="input-group">
+                <label>Edad:</label> <input type="number" name="edad" required>
+                <label>Dueño:</label> <input type="text" name="dueño" required>
+            </div>
+            <button type="submit">Guardar Paciente</button>
+        </form>
+    </div>
+
+    <h3>Listado de Pacientes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Dueño</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="paciente : ${pacientes}">
+                <td th:text="${paciente.nombre}"></td>
+                <td th:text="${paciente.especie}"></td>
+                <td th:text="${paciente.raza}"></td>
+                <td th:text="${paciente.edad}"></td>
+                <td th:text="${paciente.dueño}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
